@@ -1,0 +1,388 @@
+/* fonts */
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan_Bakh';
+    src: url('../fonts/YekanBakhNoEn-ExtraBlack.woff2') format('woff2');
+    font-weight: 950;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*-- Common Style --*/
+:root {
+    --clr-1: #864d95;
+    --clr-p: #B1B1B1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+button,
+select,
+input,
+textarea,
+p,
+a,
+li,
+input::placeholder {
+    font-family: 'Yekan_Bakh';
+}
+
+a {
+    text-decoration: none;
+}
+
+.lh-200 {
+    line-height: 200%;
+}
+
+body {
+    font-family: 'Yekan_Bakh';
+    background: rgba(244, 244, 244, 1);
+}
+
+/*******************homepage************************/
+.hero--img {
+    border-radius: 0px 0px 33px 33px;
+    height: 110%;
+}
+
+.hero--img img {
+    border-radius: 0px 0px 33px 33px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hero--text {
+    background: var(--clr-1);
+    padding: 35px 30px 90px;
+    color: white;
+    border-bottom-left-radius: 33px;
+    position: relative;
+}
+
+.hero--text .heading1 {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.hero--text .heading2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.hero--text hr {
+    width: 40%;
+}
+
+.hero--text p {
+    font-size: 18px;
+}
+
+.see-more {
+    padding: 12px 30px;
+    background: white;
+    color: var(--clr-1);
+    font-weight: 600;
+    border-radius: 35px;
+}
+
+.hero--slider {
+    position: absolute;
+    background: white;
+    padding-block: 16px;
+    padding-right: 50px;
+    padding-left: 2px;
+    border-top-left-radius: 33px;
+    left: 30px;
+    right: 30px;
+    bottom: -50px;
+}
+
+.slider-icon img {
+    width: 8px;
+    height: 13px;
+}
+
+.slider-icon {
+    position: absolute;
+    right: 6px;
+}
+
+.slider-prev {
+    top: 22px;
+}
+
+.slider-next {
+    top: 56px;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    margin: 0 3px;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: linear 0.3s;
+    background: #c29bc95d;
+}
+
+.slick-dots .slick-active button {
+    width: 23px;
+    background: #C29BC9;
+    transition: 0.3s;
+
+}
+
+.slick-slide {
+    opacity: 0.5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+/* contact */
+.contact {
+    margin-top: 140px;
+}
+
+.box {
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    border-radius: 34px 0px 34px 34px;
+    padding: 70px 24px 24px;
+    position: relative;
+}
+
+.box--header {
+    background: #C29BC9;
+    border-radius: 26px 26px 0px 26px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    padding: 14px 30px 14px 30px;
+    position: absolute;
+    top: -32px;
+}
+
+.contact--card {
+    padding: 24px;
+    background: white;
+    border-radius: 33px;
+    transition: .2s;
+    height: 100%;
+}
+
+.contact--card:hover {
+    background: #c29bc94c;
+}
+
+.contact--card:hover .card-icon {
+    background: #fff;
+}
+
+.card-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 33px;
+    background: #F4F4F4;
+    transition: 0.2s;
+}
+
+.card-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.contact--card p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 195.5%;
+    color: #363636;
+    opacity: 0.6;
+}
+
+/* about */
+.about {
+    margin: 80px 0 130px;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.about--bg {
+    position: relative;
+}
+
+.about--bg::after {
+    content: '';
+    background: url(../images/Design1.svg) no-repeat right;
+    position: absolute;
+    right: -162px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    top: 77px;
+}
+
+.about--bg::before {
+    content: '';
+    background: url(../images/Design2.svg) no-repeat center;
+    position: absolute;
+    left: -162px;
+    width: 300px;
+    height: 250px;
+    display: block;
+    top: 20%;
+    z-index: -1;
+}
+
+.about--info {
+    padding: 40px 40px 30px;
+    border-radius: 30px;
+    background: white;
+    position: relative;
+}
+
+.about--info-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: -50px;
+    background: #C29BC9;
+    border-radius: 33px 33px 0px 33px;
+}
+
+.about--info hr {
+    width: 80px;
+}
+
+.about--info h2 {
+    font-weight: 900;
+}
+
+.about--info p {
+    color: #363636;
+    opacity: 0.6;
+}
+
+.about--info ul li {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 263.5%;
+    color: #363636;
+    list-style-image: url(../images/list-tyle.svg);
+    padding-right: 12px;
+}
+
+.about--info a.see-more {
+    background: #C29BC9;
+    color: white;
+}
+
+.about--info a.see-more svg path {
+    fill: white;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+}
